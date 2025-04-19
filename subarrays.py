@@ -10,7 +10,5 @@ def generate_subarrays(arr):
 
 
 arr = [1, 2, 3]
-subarrays = generate_subarrays(arr)
-print("All subarrays:")
-for subarray in subarrays:
-    print(subarray)
+print(generate_subarrays(arr)) 
+
