@@ -3,12 +3,13 @@ def arraysortedornot(arr,n):
     if(n==0 or n==1):
         return True
     
-    return(arr[n-1]>= arr[n-2] and arraysortedornot(arr,n-1))
+    for i in range(1, n):
 
-arr=[1,2,3,4,5,5,57]
+        if (arr[i-1] < arr[i]):
+            return True
+
+    return False
+
+arr=[1,2,3,4,5,5]
 n=len(arr)
-
-if (arraysortedornot(arr, n)):
-    print("Yes")
-else:
-    print("No")
+print(arraysortedornot(arr,n))  
